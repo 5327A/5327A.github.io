@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Rerun Build</title>
+		<link rel="shortcut icon" href="galaxy.ico">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.0/css/foundation.min.css" rel="stylesheet">
+	</head>
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<script src="lib.js"></script>
+	<body style="background:rgb(236, 240, 241)">
+		<nav class="top-bar" data-topbar role="navigation" style="background:url('http://cdn.socket.io/website/imgs/galaxy.jpg') fixed">
+		  <ul class="title-area">
+		    <li class="name">
+		      <h1 style="padding-left:5px;color:rgb(236, 240, 241)">Rerun Build</h1>
+		    </li>
+		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+		  </ul>
+
+		  <section class="top-bar-section">
+		    <!-- Right Nav Section -->
+		    <ul class="right">
+		      <li class="active"><a href="#" onClick="rerunBuild()" style="padding-left:50px;padding-right:50px">Submit</a></li>
+		      <li class="divider"></li>
+			  <li class="has-form">
+				<a href="#" onClick="divCreate()" class="small default button">Add Button</a>
+			  </li>
+		    </ul>
+
+		    <!-- Left Nav Section -->
+		    <ul class="left" style="padding-left:10px">
+		      <li><a href="http://5327a.github.io">5327A</a></li>
+		    </ul>
+		  </section>
+		</nav>
+		<div class="row" style="padding-top:50px">
+			<div class="small-6 large-centered columns">	
+				<input type="password" class="form-control" id="rerunPassword" placeholder="Password">
+			</div>
+		</div>
+		<div class="row" style="padding-top:70px;background:url('http://cdn.socket.io/website/imgs/galaxy.jpg') fixed"></div>
+	</body>
+</html>

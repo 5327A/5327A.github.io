@@ -1,0 +1,66 @@
+<div id="jgau2" class="row visible-xs" style="background-attachment:fixed;background-repeat:no-repeat;background-image:url('assets/DVfield.jpg');padding-left:50px">
+  <center> <h1> Tournament History </h1></center>
+  <div class ="row">
+    <div class="col-md-4 col-md-offset-4">
+      <center>
+        <h2><b> {{tournamentDisplay.name}} </b></h2>
+        <h4><b> Rank: {{tournamentDisplay.rank}} </b></h4>
+        <h4><b> W-L-T: </b> {{tournamentDisplay.wlt}} </h4>
+        <h4><b>Elimination Rank:</b> {{tournamentDisplay.elimRank}}</h4>
+        <h4><b>Match Results:</h4></b>
+            <table class="table table-condensed" style="font-weight:bold">
+      <thead>
+        <tr>
+          <th>Match #</th>
+          <th>Red</th>
+          <th>Blue</th>h
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="info" ng-repeat="match in tournamentDisplay.match">
+          <td>{{match.number}}</td>
+          <td>{{match.red}}</td>
+          <td>{{match.blue}}</td>
+          <td>{{match.score}}</td>
+        </tr>
+      </tbody>
+    </table>
+        <h4><b> Awards won:</b> {{tournamentDisplay.awards}}</h4>
+      </center> 
+    </div>
+  </div>
+</div>
+<div id="jgau3" class="row hidden-xs" style="background-attachment:fixed;background-repeat:no-repeat;background-image:url('assets/DVfield.jpg');background-size:100%;padding-left:50px">
+  <center> <h1> Tournament History </h1></center>
+  <div class ="row">
+    <div class="col-md-4 col-md-offset-4">
+      <center>
+        <h2><b> {{tournamentDisplay.name}} </b></h2>
+        <h4><b> Rank: {{tournamentDisplay.rank}} </b></h4>
+        <h4><b> W-L-T: </b> {{tournamentDisplay.wlt}} </h4>
+        <h4><b>Elimination Rank:</b> {{tournamentDisplay.elimRank}}</h4>
+        <h4><b>Match Results:</h4></b>
+            <table class="table table-condensed" style="font-weight:bold">
+      <thead>
+        <tr>
+          <th>Match #</th>
+          <th>Red</th>
+          <th>Blue</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="info" ng-repeat="match in tournamentDisplay.match" ng-style="{'color': match.style}">
+          <td>{{match.number}}</td>
+          <td>{{match.red}}</td>
+          <td>{{match.blue}}</td>
+          <td>{{match.score}}</td>
+        </tr>
+      </tbody>
+    </table>
+        <h4><b> Awards won:</b> {{tournamentDisplay.awards}}</h4>
+      </center> 
+    </div>
+  </div>
+</div>
